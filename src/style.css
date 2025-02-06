@@ -1,4 +1,4 @@
-/* Загальні стилі */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +6,7 @@ body {
     background-color: #f5f5f5;
 }
 
-/* Контейнер */
+
 .container {
     width: 90%;
     max-width: 1200px;
@@ -16,7 +16,7 @@ body {
     padding-bottom: 20px;
 }
 
-/* Хедер */
+
 header {
     background-color: #222;
     color: white;
@@ -29,7 +29,7 @@ header h1 {
     font-size: 28px;
 }
 
-/* Меню навігації */
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -54,7 +54,7 @@ nav ul li a:hover {
     color: #f8b400;
 }
 
-/* Виділений продукт */
+
 .product-highlight {
     text-align: center;
     padding: 20px;
@@ -78,7 +78,7 @@ nav ul li a:hover {
     margin-top: 10px;
 }
 
-/* Секція товарів */
+
 .products {
     padding: 20px;
 }
@@ -89,7 +89,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
-/* Список товарів */
+
 .product-list {
     display: flex;
     flex-wrap: wrap;
@@ -145,7 +145,7 @@ nav ul li a:hover {
     background: #d19400;
 }
 
-/* Футер */
+
 footer {
     background-color: #222;
     color: white;
@@ -167,7 +167,7 @@ footer a:hover {
     margin-bottom: 10px;
 }
 
-/* Адаптивність */
+
 @media (max-width: 768px) {
     .product-list {
         flex-direction: column;

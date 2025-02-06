@@ -5,8 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SportForce</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
+    <form>
+        <label for="name">Ім’я:</label>
+        <input type="text" id="name" name="name" placeholder="Введіть своє ім’я"><br>
+      
+        <label for="email">Електронна пошта:</label>
+        <input type="text" id="email" name="email" placeholder="Введіть адресу електронної пошти"><br>
+      
+        <fieldset>
+          <legend>Стать:</legend>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Чололовік</label>
+      
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="female">Жіноча</label>
+        </fieldset>
+      
+        <fieldset>
+          <legend>Хобі:</legend>
+          <input type="checkbox" id="music" name="interest" value="music">
+          <label for="music">Музика</label>
+      
+          <input type="checkbox" id="sports" name="interest" value="sports">
+          <label for="sports">Спорт</label>
+      
+          <input type="checkbox" id="reading" name="interest" value="reading">
+          <label for="reading">Читання</label>
+        </fieldset>
+      
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введіть свій пароль"><br>
+      
+        <button type="submit">Надіслати</button>
+      </form>
     <div class="container">
         <header>
             <h1>SportForce</h1>
@@ -86,6 +120,7 @@
                     <img src ="img/image 11.png" alt="Протектор грудей дитячий(Кіокушинкай)">
                     <h3>Протектор грудей дитячий(Кіокушинкай)</h3>
                     <p> 400.00 грн</p>
+                    <button>Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 12.png" alt="Протектор грудей дитячий(Шінкьокушинкай)">
@@ -151,6 +186,7 @@
                     <img src ="img/image 21.png" alt="Тренувальна подушка 25х45х12 (Посилена)">
                     <h3>Тренувальна подушка 25х45х12 (Посилена)</h3>
                     <p> 990.00 грн</p>
+                    <button>Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 22.png" alt="Тренувальна подушка 30х40х14">
