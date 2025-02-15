@@ -3,43 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportForce</title>
+    <title>Замовлення товару</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <form>
-        <label for="name">Ім’я:</label>
-        <input type="text" id="name" name="name" placeholder="Введіть своє ім’я"><br>
-      
-        <label for="email">Електронна пошта:</label>
-        <input type="text" id="email" name="email" placeholder="Введіть адресу електронної пошти"><br>
-      
-        <fieldset>
-          <legend>Стать:</legend>
-          <input type="radio" id="male" name="gender" value="male">
-          <label for="male">Чололовік</label>
-      
-          <input type="radio" id="female" name="gender" value="female">
-          <label for="female">Жіноча</label>
-        </fieldset>
-      
-        <fieldset>
-          <legend>Хобі:</legend>
-          <input type="checkbox" id="music" name="interest" value="music">
-          <label for="music">Музика</label>
-      
-          <input type="checkbox" id="sports" name="interest" value="sports">
-          <label for="sports">Спорт</label>
-      
-          <input type="checkbox" id="reading" name="interest" value="reading">
-          <label for="reading">Читання</label>
-        </fieldset>
-      
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password" placeholder="Введіть свій пароль"><br>
-      
-        <button type="submit">Надіслати</button>
-      </form>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Оформлення замовлення</h2>
+            <form id="orderForm">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="address">Адреса доставки:</label>
+                <input type="text" id="address" required>
+                
+                <button type="submit">Підтвердити</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="main.js"></script>
+
+
     <div class="container">
         <header>
             <h1>SportForce</h1>
@@ -72,132 +61,132 @@
                     <img src="img/image 3.png" alt="Груша боксерська">
                     <h3>Груша боксерська</h3>
                     <p>3,100.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
 
                 <div class="product">
                     <img src="img/image 4.png" alt="Лапи">
                     <h3>Лапи</h3>
                     <p>1,800.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
 
                 <div class="product">
                     <img src="img/image.png" alt="Протектор гомілки (планка)">
                     <h3>Протектор гомілки (планка)</h3>
                     <p>350.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
 
                 <div class="product">
                     <img src="img/image 7.png" alt="Протектор гомілки Кіокушинкай">
                     <h3>Протектор гомілки (Кіокушинкай)</h3>
                     <p>550.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
 
                 <div class="product">
                     <img src="img/image 8.png" alt="Протектор гомілки Шінкьокушинкай">
                     <h3>Протектор гомілки (Шінкьокушинкай)</h3>
                     <p>550.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
 
                 <div class="product">
                     <img src="img/image 9.png" alt="Протектор грудей">
                     <h3>Протектор грудей</h3>
                     <p>610.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>     
                 <div class ="product">
                     <img src ="img/image10.png" alt="Протектор грудей GreenHill">
                     <h3>Протектор грудей GreenHill</h3>
                     <p> 960.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 11.png" alt="Протектор грудей дитячий(Кіокушинкай)">
                     <h3>Протектор грудей дитячий(Кіокушинкай)</h3>
                     <p> 400.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 12.png" alt="Протектор грудей дитячий(Шінкьокушинкай)">
                     <h3>Протектор грудей дитячий(Шінкьокушинкай)</h3>
                     <p> 400.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 13.png" alt="Протектор паху(жін.)">
                     <h3>Протектор паху(жін.)</h3>
                     <p> 350.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 14.png" alt="Протектор паху(чол.)">
                     <h3>Протектор паху(чол.)</h3>
                     <p> 250.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 15.png" alt="Ракетка">
                     <h3>Ракетка</h3>
                     <p> 650.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 16.png" alt="Рукавиці(панчоха)">
                     <h3>Рукавиці(панчоха)</h3>
                     <p> 200.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 17.png" alt="Рукавиці Тхеквондо (довга застібка)">
                     <h3>Рукавиці Тхеквондо (довга застібка)</h3>
                     <p> 450.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 18.png" alt="Рукавиці Тхеквондо (коротка застібка)">
                     <h3>Рукавиці Тхеквондо (коротка застібка)</h3>
                     <p> 380.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 18.png" alt="Рукавиці шкіряні (Кіокушинкай)">
                     <h3>Рукавиці шкіряні (Кіокушинкай)</h3>
                     <p> 760.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 19.png" alt="Рукавиці шкіряні (Шинкіокушинкай)">
                     <h3>Рукавиці шкіряні (Шинкіокушинкай)</h3>
                     <p> 750.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 20.png" alt="Тренувальна подушка 25х45х12">
                     <h3>Тренувальна подушка 25х45х12</h3>
                     <p> 950.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 21.png" alt="Тренувальна подушка 25х45х12 (Посилена)">
                     <h3>Тренувальна подушка 25х45х12 (Посилена)</h3>
                     <p> 990.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 22.png" alt="Тренувальна подушка 30х40х14">
                     <h3>Тренувальна подушка 30х40х14</h3>
                     <p> 1300.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
                 <div class ="product">
                     <img src ="img/image 23.png" alt="Тренувальна подушка 40х60х15">
                     <h3>Тренувальна подушка 40х60х15</h3>
                     <p> 1800.00 грн</p>
-                    <button>Купити</button>
+                    <button id="buyButton">Купити</button>
                 </div>
             </div>
         </section>
