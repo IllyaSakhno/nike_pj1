@@ -35,3 +35,10 @@ document.addEventListener("DOMContentLoaded", function () {
         alertBox.remove();
   });
   }
+  function changeLanguage(url) {
+    location.href = url;
+}
+
+document.getElementById("languageSwitcher").addEventListener("change", function () {
+    location.href = this.value;
+});

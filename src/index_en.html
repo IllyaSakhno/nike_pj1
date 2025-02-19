@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Order</title>
+    <link rel="icon" href="img/boxing.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Place an Order</h2>
+            <form id="orderForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" required>
+                
+                <label for="address">Delivery Address:</label>
+                <input type="text" id="address" required>
+                
+                <button type="submit">Confirm</button>
+            </form>
+        </div>
+    </div>
+    <nav>
+        <select onchange="location = this.value;">
+            <option value="index.html">Українська</option>
+            <option value="index_en.html">English</option>
+        </select>
+    </nav>
+    <script src="main.js"></script>
+
+    <div class="container">
+        <header>
+            <h1>SportForce</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Training Equipment</a></li>
+                    <li><a href="#">Belts</a></li>
+                    <li><a href="#">Sportswear</a></li>
+                    <li><a href="#">T-shirts</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Referee Equipment</a></li>
+                    <li><a href="#">Product Order</a></li>
+                    <li><a href="#" onclick="changeLanguage('index_en.html')">EN</a></li>
+                    <li><a href="#" onclick="changeLanguage('index.html')">UA</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="product-highlight">
+            <div class="price">
+                <span>Price</span>
+                <strong>799 UAH</strong>
+            </div>
+            <img src="img/89143610-9392-475a-b0ce-9b36ce758fb7 1.png" alt="Headgear (Kyokushin)">
+            <p class="product-description">Headgear (Kyokushin)<br>Made in Europe</p>
+        </section>
+
+        <section class="products">
+            <h2>Training Equipment</h2>
+            
+            <div class="product-list">
+                <div class="product">
+                    <img src="img/image 3.png" alt="Boxing Bag">
+                    <h3>Boxing Bag</h3>
+                    <p>3,100.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/image 4.png" alt="Focus Mitts">
+                    <h3>Focus Mitts</h3>
+                    <p>1,800.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/image.png" alt="Shin Guard (Plank)">
+                    <h3>Shin Guard (Plank)</h3>
+                    <p>350.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/image 7.png" alt="Shin Guard (Kyokushin)">
+                    <h3>Shin Guard (Kyokushin)</h3>
+                    <p>550.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/image 8.png" alt="Shin Guard (Shinkyokushin)">
+                    <h3>Shin Guard (Shinkyokushin)</h3>
+                    <p>550.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+
+                <div class="product">
+                    <img src="img/image 9.png" alt="Chest Guard">
+                    <h3>Chest Guard</h3>
+                    <p>610.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>     
+                <div class="product">
+                    <img src="img/image10.png" alt="Chest Guard GreenHill">
+                    <h3>Chest Guard GreenHill</h3>
+                    <p>960.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 11.png" alt="Kids Chest Guard (Kyokushin)">
+                    <h3>Kids Chest Guard (Kyokushin)</h3>
+                    <p>400.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 12.png" alt="Kids Chest Guard (Shinkyokushin)">
+                    <h3>Kids Chest Guard (Shinkyokushin)</h3>
+                    <p>400.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 13.png" alt="Groin Guard (Women)">
+                    <h3>Groin Guard (Women)</h3>
+                    <p>350.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 14.png" alt="Groin Guard (Men)">
+                    <h3>Groin Guard (Men)</h3>
+                    <p>250.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 15.png" alt="Paddle">
+                    <h3>Paddle</h3>
+                    <p>650.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 16.png" alt="Gloves (Sock)">
+                    <h3>Gloves (Sock)</h3>
+                    <p>200.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 17.png" alt="Taekwondo Gloves (Long Strap)">
+                    <h3>Taekwondo Gloves (Long Strap)</h3>
+                    <p>450.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 18.png" alt="Taekwondo Gloves (Short Strap)">
+                    <h3>Taekwondo Gloves (Short Strap)</h3>
+                    <p>380.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 18.png" alt="Leather Gloves (Kyokushin)">
+                    <h3>Leather Gloves (Kyokushin)</h3>
+                    <p>760.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 19.png" alt="Leather Gloves (Shinkyokushin)">
+                    <h3>Leather Gloves (Shinkyokushin)</h3>
+                    <p>750.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 20.png" alt="Training Pad 25x45x12">
+                    <h3>Training Pad 25x45x12</h3>
+                    <p>950.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 21.png" alt="Training Pad 25x45x12 (Reinforced)">
+                    <h3>Training Pad 25x45x12 (Reinforced)</h3>
+                    <p>990.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 22.png" alt="Training Pad 30x40x14">
+                    <h3>Training Pad 30x40x14</h3>
+                    <p>1,300.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 23.png" alt="Training Pad 40x60x15">
+                    <h3>Training Pad 40x60x15</h3>
+                    <p>1,800.00 UAH</p>
+                    <button id="buyButton">Buy</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="contact">
+                <p>📞 Contact Phone: <a href="tel:+380668316672">+380668316672</a></p>
+                <p>📧 Email: <a href="mailto:sportforce@gmail.com">sportforce@gmail.com</a></p>
+            </div>
+            <div class="schedule">
+                <p>🕒 Working Hours:</p>
+                <p>Mon-Fri: 9:00 - 18:00</p>
+                <p>Sat-Sun: Closed</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
