@@ -39,21 +39,31 @@ document.addEventListener("DOMContentLoaded", function () {
     location.href = url;
 }
 
-document.getElementById("languageSwitcher").addEventListener("change", function () {
-    location.href = this.value;
-});
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("JS працює!"); // Перевірка, чи підключений файл main.js
+
+    const buyButtons = document.querySelectorAll(".buyButton");
     const modal = document.getElementById("modal");
-    const closeModal = document.querySelector(".close");
-    const buyButtons = document.querySelectorAll(".product button");
+    const closeButton = document.querySelector(".close");
+
+    if (!modal || !closeButton) {
+        console.error("Помилка: Модальне вікно або кнопка закриття не знайдені!");
+        return;
+    }
+
+    if (buyButtons.length === 0) {
+        console.error("Помилка: Кнопки 'Купити' не знайдені!");
+        return;
+    }
 
     buyButtons.forEach(button => {
         button.addEventListener("click", function () {
+            console.log("Кнопка натиснута!");
             modal.style.display = "block";
         });
     });
 
-    closeModal.addEventListener("click", function () {
+    closeButton.addEventListener("click", function () {
         modal.style.display = "none";
     });
 

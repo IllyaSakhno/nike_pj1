@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="modal" class="modal">
+    <div id="modal" class="modal" style="display: none;">
         <div class="modal-content">
             <span class="close">&times;</span>
             <h2>Place an Order</h2>
             <form id="orderForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" required>
-                
+
                 <label for="phone">Phone:</label>
                 <input type="tel" id="phone" required>
-                
+
                 <label for="address">Delivery Address:</label>
                 <input type="text" id="address" required>
-                
+
                 <button type="submit">Confirm</button>
             </form>
         </div>
     </div>
+
     <script src="main.js"></script>
 
     <div class="container">
@@ -45,14 +46,14 @@
                 </ul>
             </nav>
         </header>
-        
+
         <section class="product-highlight">
             <div class="price">
                 <span>Price</span>
                 <strong>799 UAH</strong>
             </div>
-            <img src="img/89143610-9392-475a-b0ce-9b36ce758fb7 1.png" alt="Headgear (Kyokushin)">
-            <p class="product-description">Headgear (Kyokushin)<br>Made in Europe</p>
+            <img src="img/89143610-9392-475a-b0ce-9b36ce758fb7 1.png" alt="Head Guard (Kyokushinkai)">
+            <p class="product-description">Head Guard (Kyokushinkai)<br>Made in Europe</p>
         </section>
 
         <section class="products">
@@ -63,135 +64,136 @@
                     <img src="img/image 3.png" alt="Boxing Bag">
                     <h3>Boxing Bag</h3>
                     <p>3,100.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <button class="buyButton">Buy</button>
                 </div>
 
                 <div class="product">
                     <img src="img/image 4.png" alt="Focus Mitts">
                     <h3>Focus Mitts</h3>
                     <p>1,800.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <button class="buyButton">Buy</button>
                 </div>
 
                 <div class="product">
                     <img src="img/image.png" alt="Shin Guard (Plank)">
                     <h3>Shin Guard (Plank)</h3>
                     <p>350.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <button class="buyButton">Buy</button>
+                </div>
+                <div class="product">
+                    <img src="img/image 7.png" alt="Shin Guard (Kyokushinkai)">
+                    <h3>Shin Guard (Kyokushinkai)</h3>
+                    <p>550.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
 
                 <div class="product">
-                    <img src="img/image 7.png" alt="Shin Guard (Kyokushin)">
-                    <h3>Shin Guard (Kyokushin)</h3>
+                    <img src="img/image 8.png" alt="Shin Guard (Shinkyokushinkai)">
+                    <h3>Shin Guard (Shinkyokushinkai)</h3>
                     <p>550.00 UAH</p>
-                    <button id="buyButton">Buy</button>
-                </div>
-
-                <div class="product">
-                    <img src="img/image 8.png" alt="Shin Guard (Shinkyokushin)">
-                    <h3>Shin Guard (Shinkyokushin)</h3>
-                    <p>550.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <button class="buyButton">Buy</button>
                 </div>
 
                 <div class="product">
                     <img src="img/image 9.png" alt="Chest Guard">
                     <h3>Chest Guard</h3>
                     <p>610.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <button class="buyButton">Buy</button>
                 </div>     
-                <div class="product">
-                    <img src="img/image10.png" alt="Chest Guard GreenHill">
+                <div class ="product">
+                    <img src ="img/image10.png" alt="Chest Guard GreenHill">
                     <h3>Chest Guard GreenHill</h3>
-                    <p>960.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 960.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 11.png" alt="Kids Chest Guard (Kyokushin)">
-                    <h3>Kids Chest Guard (Kyokushin)</h3>
-                    <p>400.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                <div class ="product">
+                    <img src ="img/image 11.png" alt="Kids Chest Guard (Kyokushinkai)">
+                    <h3>Kids Chest Guard (Kyokushinkai)</h3>
+                    <p> 400.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 12.png" alt="Kids Chest Guard (Shinkyokushin)">
-                    <h3>Kids Chest Guard (Shinkyokushin)</h3>
-                    <p>400.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                <div class ="product">
+                    <img src ="img/image 12.png" alt="Kids Chest Guard (Shinkyokushinkai)">
+                    <h3>Kids Chest Guard (Shinkyokushinkai)</h3>
+                    <p> 400.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 13.png" alt="Groin Guard (Women)">
+                <div class ="product">
+                    <img src ="img/image 13.png" alt="Groin Guard (Women)">
                     <h3>Groin Guard (Women)</h3>
-                    <p>350.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 350.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 14.png" alt="Groin Guard (Men)">
+                <div class ="product">
+                    <img src ="img/image 14.png" alt="Groin Guard (Men)">
                     <h3>Groin Guard (Men)</h3>
-                    <p>250.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 250.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 15.png" alt="Paddle">
-                    <h3>Paddle</h3>
-                    <p>650.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                <div class ="product">
+                    <img src ="img/image 15.png" alt="Racket">
+                    <h3>Racket</h3>
+                    <p> 650.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 16.png" alt="Gloves (Sock)">
+                <div class ="product">
+                    <img src ="img/image 16.png" alt="Gloves (Sock)">
                     <h3>Gloves (Sock)</h3>
-                    <p>200.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 200.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 17.png" alt="Taekwondo Gloves (Long Strap)">
+                <div class ="product">
+                    <img src ="img/image 17.png" alt="Taekwondo Gloves (Long Strap)">
                     <h3>Taekwondo Gloves (Long Strap)</h3>
-                    <p>450.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 450.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 18.png" alt="Taekwondo Gloves (Short Strap)">
+                <div class ="product">
+                    <img src ="img/image 18.png" alt="Taekwondo Gloves (Short Strap)">
                     <h3>Taekwondo Gloves (Short Strap)</h3>
-                    <p>380.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 380.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 18.png" alt="Leather Gloves (Kyokushin)">
-                    <h3>Leather Gloves (Kyokushin)</h3>
-                    <p>760.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                <div class ="product">
+                    <img src ="img/image 18.png" alt="Leather Gloves (Kyokushinkai)">
+                    <h3>Leather Gloves (Kyokushinkai)</h3>
+                    <p> 760.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 19.png" alt="Leather Gloves (Shinkyokushin)">
-                    <h3>Leather Gloves (Shinkyokushin)</h3>
-                    <p>750.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                <div class ="product">
+                    <img src ="img/image 19.png" alt="Leather Gloves (Shinkyokushinkai)">
+                    <h3>Leather Gloves (Shinkyokushinkai)</h3>
+                    <p> 750.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 20.png" alt="Training Pad 25x45x12">
+                <div class ="product">
+                    <img src ="img/image 20.png" alt="Training Pad 25x45x12">
                     <h3>Training Pad 25x45x12</h3>
-                    <p>950.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 950.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 21.png" alt="Training Pad 25x45x12 (Reinforced)">
+                <div class ="product">
+                    <img src ="img/image 21.png" alt="Training Pad 25x45x12 (Reinforced)">
                     <h3>Training Pad 25x45x12 (Reinforced)</h3>
-                    <p>990.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 990.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 22.png" alt="Training Pad 30x40x14">
+                <div class ="product">
+                    <img src ="img/image 22.png" alt="Training Pad 30x40x14">
                     <h3>Training Pad 30x40x14</h3>
-                    <p>1,300.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 1300.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
-                <div class="product">
-                    <img src="img/image 23.png" alt="Training Pad 40x60x15">
+                <div class ="product">
+                    <img src ="img/image 23.png" alt="Training Pad 40x60x15">
                     <h3>Training Pad 40x60x15</h3>
-                    <p>1,800.00 UAH</p>
-                    <button id="buyButton">Buy</button>
+                    <p> 1800.00 UAH</p>
+                    <button class="buyButton">Buy</button>
                 </div>
             </div>
+        </div>    
         </section>
+    
 
         <footer>
             <div class="contact">
@@ -201,7 +203,7 @@
             <div class="schedule">
                 <p>🕒 Working Hours:</p>
                 <p>Mon-Fri: 9:00 - 18:00</p>
-                <p>Sat-Sun: Closed</p>
+                <p>Sat-Sun: Day Off</p>
             </div>
         </footer>
     </div>
